@@ -1,0 +1,335 @@
+﻿<Controls:MetroWindow x:Class="DoingMusicOpinionTable.OpinionPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DoingMusicOpinionTable"
+        mc:Ignorable="d"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="OpinionPage" Height="912" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Grid.Row="0">
+            <StackPanel HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch">
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="一、請問在半年內，您是：第_____次到本館消費？ " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox1" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="30"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="二、請問您是如何知道本館？ " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton2_1" Content="以前來過" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2"/>
+                        <RadioButton x:Name="radioButton2_2" Content="媒體報導" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2"/>
+                        <RadioButton x:Name="radioButton2_3" Content="朋友介紹" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2"/>
+                        <RadioButton x:Name="radioButton2_4" Content="廣告文宣" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2"/>
+                        <RadioButton x:Name="radioButton2_5" Content="路過" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2"/>
+                        <RadioButton x:Name="radioButton2_6" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_2">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="三、請問您今天到本館用餐的原因是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton3_1" Content="家庭聚餐" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_2" Content="朋友聚餐" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_3" Content="慶生" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_4" Content="休閒旅遊" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_5" Content="寵物體驗" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_6" Content="結婚紀念" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3"/>
+                        <RadioButton x:Name="radioButton3_7" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_3">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="四、請問您今天的餐點是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton4_1" Content="主餐" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_2" Content="燉飯" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_3" Content="義大利麵" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_4" Content="砂鍋" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_5" Content="沙拉" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_6" Content="炸物" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_7" Content="澳洲鹹派" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_8" Content="鬆餅" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_9" Content="千層披薩" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4"/>
+                        <RadioButton x:Name="radioButton4_10" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4">
+                            <TextBox Text="下午茶套餐" Width="120"/>
+                        </RadioButton>
+
+                        <RadioButton x:Name="radioButton4_11" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_4">
+                            <TextBox Text="手作點心" Width="120"/>
+                        </RadioButton>
+                        
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="五、請問您今天的飲品是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton5_1" Content="花式咖啡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_2" Content="虹吸咖啡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_3" Content="鍋煮奶茶" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_4" Content="英式茶品" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_5" Content="台灣茶韻" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_6" Content="鮮煮茶" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_7" Content="微氣泡飲品" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_8" Content="德國有機花草茶" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5"/>
+                        <RadioButton x:Name="radioButton5_9" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_5">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+
+                    </StackPanel>
+                </Grid>
+                <Grid>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="六、" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="1.請問您今天用餐的感覺是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="鹹度：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_1_1_1" Content="太淡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_1"/>
+                            <RadioButton x:Name="radioButton6_1_1_2" Content="適中" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_1"/>
+                            <RadioButton x:Name="radioButton6_1_1_3" Content="太鹹" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_1"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="甜度：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_1_2_1" Content="太淡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_2"/>
+                            <RadioButton x:Name="radioButton6_1_2_2" Content="適中" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_2"/>
+                            <RadioButton x:Name="radioButton6_1_2_3" Content="太甜" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_2"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="油膩度：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_1_3_1" Content="太淡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_3"/>
+                            <RadioButton x:Name="radioButton6_1_3_2" Content="適中" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_3"/>
+                            <RadioButton x:Name="radioButton6_1_3_3" Content="太油" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="總體味道如何？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_1_4_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_4"/>
+                            <RadioButton x:Name="radioButton6_1_4_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_4"/>
+                            <RadioButton x:Name="radioButton6_1_4_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_1_4"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="2.您認為本館菜色的感覺是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="種類：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_2_1_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_1"/>
+                            <RadioButton x:Name="radioButton6_2_1_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_1"/>
+                            <RadioButton x:Name="radioButton6_2_1_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_1"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="份量：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_2_2_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_2"/>
+                            <RadioButton x:Name="radioButton6_2_2_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_2"/>
+                            <RadioButton x:Name="radioButton6_2_2_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_2"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="新鮮程度:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_2_3_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_3"/>
+                            <RadioButton x:Name="radioButton6_2_3_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_3"/>
+                            <RadioButton x:Name="radioButton6_2_3_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_3"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="菜色整體滿意度如何：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_2_4_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_4"/>
+                            <RadioButton x:Name="radioButton6_2_4_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_4"/>
+                            <RadioButton x:Name="radioButton6_2_4_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_2_4"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="3.你認為本館的服務怎麼樣？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="互動：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_3_1_1" Content="幾乎沒有" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_1"/>
+                            <RadioButton x:Name="radioButton6_3_1_2" Content="偶爾有" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_1"/>
+                            <RadioButton x:Name="radioButton6_3_1_3" Content="到位" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_1"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="態度：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_3_2_1" Content="惡劣" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_2"/>
+                            <RadioButton x:Name="radioButton6_3_2_2" Content="一般" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_2"/>
+                            <RadioButton x:Name="radioButton6_3_2_3" Content="很好" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_2"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="動作：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_3_3_1" Content="遲緩" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_3"/>
+                            <RadioButton x:Name="radioButton6_3_3_2" Content="一般" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_3"/>
+                            <RadioButton x:Name="radioButton6_3_3_3" Content="細膩貼心" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_3"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="上菜速度:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_3_4_1" Content="慢" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_4"/>
+                            <RadioButton x:Name="radioButton6_3_4_2" Content="一般" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_4"/>
+                            <RadioButton x:Name="radioButton6_3_4_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_4"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="服務整體滿意度如何：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <RadioButton x:Name="radioButton6_3_5_1" Content="不滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_5"/>
+                            <RadioButton x:Name="radioButton6_3_5_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_5"/>
+                            <RadioButton x:Name="radioButton6_3_5_3" Content="滿意" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_6_3_5"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                            <Label Content="4.請問您還希望增加哪些餐點或飲品？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                            <TextBox x:Name="textBox6_4" HorizontalAlignment="Center" Height="23" Margin="10,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="180"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="七、本館將定期舉辦系列課程與活動，請問您有興趣的主題是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton7_1" Content="音樂賞析" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_2" Content="文創商品" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_3" Content="咖啡相關" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_4" Content="品茗相關" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_5" Content="友善寵物" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_6" Content="室內植栽綠化" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_7" Content="在地文化與歷史" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7"/>
+                        <RadioButton x:Name="radioButton7_8" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_7">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="八、請問您喜歡與毛小孩互動嗎？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton8_1" Content="不喜歡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_8"/>
+                        <RadioButton x:Name="radioButton8_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_8"/>
+                        <RadioButton x:Name="radioButton8_3" Content="喜歡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_8"/>
+                        <RadioButton x:Name="radioButton8_4" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_8">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="九、承上題，您最喜歡本館哪個毛孩呢？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton9_1" Content="白狼" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_9"/>
+                        <RadioButton x:Name="radioButton9_2" Content="汪汪" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_9"/>
+                        <RadioButton x:Name="radioButton9_3" Content="Mia" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_9"/>
+                        <RadioButton x:Name="radioButton9_4" Content="一隻都沒看到" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_9"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="十、您認為本館最吸引人的特色是？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton10_1" Content="接待親切服務好" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                        <RadioButton x:Name="radioButton10_2" Content="店內環境氣氛佳" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                        <RadioButton x:Name="radioButton10_3" Content="餐點美味" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                        <RadioButton x:Name="radioButton10_4" Content="寵物友善區" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                        <RadioButton x:Name="radioButton10_5" Content="現場音樂演奏" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                        <RadioButton x:Name="radioButton10_6" Content="生命教育理念" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_10"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="十一、您的意見，我們都非常珍惜，並援引為改善的依據。請問您對本館有什麼建議或鼓勵呢？" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox11" HorizontalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="360"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Stretch">
+                <Grid Height="30">
+                    <Label Content="毛小孩資料(若無則無需填寫)" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="類型：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton12_1" Content="汪星人" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12"/>
+                        <RadioButton x:Name="radioButton12_2" Content="喵太座" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12"/>
+                        <RadioButton x:Name="radioButton12_3" Content="鳥吱吱" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12"/>
+                        <RadioButton x:Name="radioButton12_4" Content="兔仔仔" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12"/>
+                        <RadioButton x:Name="radioButton12_5" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12">
+                            <TextBox Text="其他" Width="120"/>
+                        </RadioButton>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="年齡：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox12_2" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="30"/>
+                        <Label Content="歲" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="品種：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox12_3" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="100"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="性別：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton12_3_1" Content="女生" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_3"/>
+                        <RadioButton x:Name="radioButton12_3_2" Content="男生" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_3"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="生日：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox12_4_m" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="30"/>
+                        <Label Content="月" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <TextBox x:Name="textBox12_4_d" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="1" VerticalAlignment="Center" Width="30"/>
+                        <Label Content="日" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="有來過本館嗎：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton12_5_1" Content="有" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_5"/>
+                        <RadioButton x:Name="radioButton12_5_2" Content="尚未" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_5"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="請問您今天有替毛小孩點餐嗎：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton12_6_1" Content="有" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_6"/>
+                        <RadioButton x:Name="radioButton12_6_2" Content="沒有" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_6"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Height="30">
+                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                        <Label Content="承上題，請問您感覺毛孩對餐點的喜好為：" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0"/>
+                        <RadioButton x:Name="radioButton12_7_1" Content="不喜歡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_7"/>
+                        <RadioButton x:Name="radioButton12_7_2" Content="尚可" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_7"/>
+                        <RadioButton x:Name="radioButton12_7_3" Content="喜歡" Grid.Column="1" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" GroupName="QG_12_7"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+        <Grid Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button x:Name="button" Content="取消" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" Click="button_Click" FontSize="24"/>
+                <Button x:Name="button1" Content="完成" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" Click="button1_Click" FontSize="22"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Controls:MetroWindow>
